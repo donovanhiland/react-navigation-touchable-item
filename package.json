@@ -43,8 +43,10 @@
     "typescript": "^3.4.1"
   },
   "dependencies": {
-    "react": "^16.8.6",
-    "react-native": "^0.59.3",
     "react-native-gesture-handler": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.4.1",
+    "react-native": ">=0.56.0"
   }
 }
