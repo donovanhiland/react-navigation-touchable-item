@@ -1,6 +1,6 @@
 {
   "name": "react-navigation-touchable-item",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "description": "React Navigation's TouchableItem",
   "keywords": [
     "React Navigation",
@@ -37,11 +37,14 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-native": "^3.6.0",
     "prettier": "^1.16.4",
+    "react": "16.8.3",
+    "react-native": "^0.59.3",
+    "react-native-gesture-handler": "^1.1.0",
     "typescript": "^3.4.1"
   },
   "peerDependencies": {
-    "react-native-gesture-handler": ">=1.0.0",
+    "react": ">=16.4.1",
     "react-native": ">=0.56.0",
-    "react": ">=16.4.1"
+    "react-native-gesture-handler": ">=1.0.0"
   }
 }
