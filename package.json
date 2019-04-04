@@ -11,9 +11,6 @@
   "repository": "https://github.com/donovanhiland/react-navigation-touchable-item.git",
   "author": "Donovan Hiland <donovan.hiland@gmail.com>",
   "license": "MIT",
-  "files": [
-    "lib/**/*"
-  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -42,11 +39,9 @@
     "prettier": "^1.16.4",
     "typescript": "^3.4.1"
   },
-  "dependencies": {
-    "react-native-gesture-handler": "^1.1.0"
-  },
   "peerDependencies": {
-    "react": ">=16.4.1",
-    "react-native": ">=0.56.0"
+    "react-native-gesture-handler": ">=1.0.0",
+    "react-native": ">=0.56.0",
+    "react": ">=16.4.1"
   }
 }

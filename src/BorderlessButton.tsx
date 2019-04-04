@@ -2,7 +2,7 @@ import React from 'react'
 import { Animated, Platform } from 'react-native'
 import { BaseButton, BaseButtonProperties } from 'react-native-gesture-handler'
 
-const AnimatedBaseButton = Animated.createAnimatedComponent(BaseButton)
+const AnimatedBaseButtonTest = Animated.createAnimatedComponent(BaseButton)
 
 export interface BorderlessButtonProps extends BaseButtonProperties {
   activeOpacity: number
@@ -45,7 +45,7 @@ export default class BorderlessButton extends React.Component<
     const { children, style, enabled, ...rest } = this.props
 
     return (
-      <AnimatedBaseButton
+      <AnimatedBaseButtonTest
         {...rest}
         onActiveStateChange={this._onActiveStateChange}
         style={[
@@ -54,7 +54,7 @@ export default class BorderlessButton extends React.Component<
         ]}
       >
         {children}
-      </AnimatedBaseButton>
+      </AnimatedBaseButtonTest>
     )
   }
 }
