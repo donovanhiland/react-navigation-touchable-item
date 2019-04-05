@@ -15,17 +15,27 @@ import {
   View,
   ViewStyle,
   StyleProp,
+  TouchableOpacityProps,
+  TouchableNativeFeedbackProps,
+  GestureResponderEvent,
+  Insets,
 } from 'react-native'
 
-import BorderlessButton from './BorderlessButton'
+import BorderlessButton, { BorderlessButtonProps } from './BorderlessButton'
 
 const ANDROID_VERSION_LOLLIPOP = 21
 
-export interface TouchableItemProps {
+interface TouchableItemProps
+  extends Omit<BorderlessButtonProps, 'activeOpacity'>,
+    TouchableNativeFeedbackProps,
+    Omit<TouchableOpacityProps, 'activeOpacity'> {
+  activeOpacity?: number
+  hitSlop?: Insets
   borderless: boolean
   disabled: boolean
   pressColor: string
   style: StyleProp<ViewStyle>
+  onPress: (e: GestureResponderEvent | boolean) => void
 }
 
 export default class TouchableItem extends React.Component<TouchableItemProps> {
