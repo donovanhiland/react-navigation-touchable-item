@@ -26,7 +26,7 @@ import BorderlessButton, { BorderlessButtonProps } from './BorderlessButton'
 const ANDROID_VERSION_LOLLIPOP = 21
 
 interface TouchableItemProps
-  extends Omit<BorderlessButtonProps, 'activeOpacity'>,
+  extends Omit<BorderlessButtonProps, 'activeOpacity' | 'enabled'>,
     TouchableNativeFeedbackProps,
     Omit<TouchableOpacityProps, 'activeOpacity'> {
   activeOpacity?: number
@@ -35,7 +35,7 @@ interface TouchableItemProps
   disabled: boolean
   pressColor: string
   style: StyleProp<ViewStyle>
-  onPress: (e: GestureResponderEvent | boolean) => void
+  onPress?: (e: GestureResponderEvent | boolean) => void
 }
 
 export default class TouchableItem extends React.Component<TouchableItemProps> {
