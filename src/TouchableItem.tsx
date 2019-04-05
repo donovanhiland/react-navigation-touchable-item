@@ -14,6 +14,7 @@ import {
   TouchableOpacity,
   View,
   ViewStyle,
+  StyleProp,
 } from 'react-native'
 
 import BorderlessButton from './BorderlessButton'
@@ -24,7 +25,7 @@ export interface TouchableItemProps {
   borderless: boolean
   disabled: boolean
   pressColor: string
-  style: ViewStyle
+  style: StyleProp<ViewStyle>
 }
 
 export default class TouchableItem extends React.Component<TouchableItemProps> {
